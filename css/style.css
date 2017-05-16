@@ -1,0 +1,124 @@
+body {
+  background-color: #262626;
+}
+
+.control-container {
+  background-color: #595959;
+  position: relative;
+  width: 80%;
+  height: 100px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.square-container {
+  background-color: #333333;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.counter {
+  float: right;
+  background-color: skyblue;
+  width: 180px;
+  height: 50px;
+  padding: 10px;
+  margin-top: 14px;
+  text-align: center;
+  color: #fff;
+  font-size: 3em;
+  font-family: sans-serif;
+}
+
+button {
+  float: left;
+  display: inline;
+  background: grey;
+  padding: 20px;
+  margin-top: 12px;
+  border: none;
+  color: white;
+  font-size: .9em;
+}
+button:hover {
+  background-color: #6e6e6e;
+  color: #d4d4d4;
+}
+button:focus {
+  outline: none;
+}
+button .disabled {
+  color: red;
+}
+
+.square {
+  position: relative;
+  height: auto;
+  margin: 2%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 21%;
+          flex: 0 0 21%;
+}
+
+.square:before {
+  content: '';
+  float: left;
+  padding-top: 100%;
+}
+
+@media all and (max-width: 700px) {
+  .square {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 38%;
+            flex: 0 0 38%;
+    margin: 2%;
+  }
+
+  .counter {
+    width: 15%;
+  }
+}
+@media all and (max-width: 550px) {
+  .counter {
+    width: 23%;
+  }
+}
+.green {
+  background-color: #33eeaa;
+}
+
+.rose {
+  background-color: #FF997E;
+}
+
+.blue {
+  background-color: #8265EE;
+}
+
+.yellow {
+  background-color: #FFFF71;
+}
+
+.highlight {
+  background-color: #a9f8db;
+}
+
+.wrong {
+  background-color: #FF8D5D;
+}
+
+.correct {
+  background-color: #29D1F7;
+}

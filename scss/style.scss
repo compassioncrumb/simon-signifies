@@ -1,0 +1,123 @@
+$greenBox: #33eeaa;
+$roseBox: #FF997E;
+$yellowBox: #FFFF71;
+$blueBox: #8265EE;
+
+body {
+  background-color: #262626;
+}
+
+.control-container {
+  background-color: #595959;
+  position: relative;
+  width: 80%; 
+  height: 100px;
+  
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.square-container {
+  background-color: #333333;
+  width: 80%;
+  
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.counter {
+  float: right;
+  background-color: skyblue; 
+  width: 180px; 
+  height: 50px;
+  
+  padding: 10px;
+  margin-top: 14px;
+  
+  text-align: center;
+  color: #fff;
+  font-size: 3em;
+  font-family: sans-serif;
+}
+
+button {
+  float: left;
+  display: inline;
+  background: grey; 
+  
+  padding: 20px;
+  margin-top: 12px;
+  border: none;
+  
+  color: white; 
+  font-size: .9em; 
+
+  &:hover { 
+    background-color: darken(grey, 7%);
+    color: darken(white, 17%);
+  }
+  
+  &:focus { outline: none; }
+  
+  .disabled { color: red; }
+}
+
+.square { 
+  position: relative;
+  height: auto; 
+  margin: 2%;
+  flex: 0 0 21%; 
+}
+
+.square:before {
+  content:'';
+  float:left;
+  padding-top:100%;
+}
+
+@media all and (max-width: 700px) {
+  .square { 
+  flex: 0 0 38%; 
+  margin: 2%;
+  }
+  .counter { width: 15%; }
+}
+
+@media all and (max-width: 550px) {
+  .counter { width: 23%; }
+}
+
+.green {
+  background-color: $greenBox; 
+}
+
+.rose {
+  background-color: $roseBox;
+}
+
+.blue {
+  background-color: $blueBox;
+}
+
+.yellow {
+  background-color: $yellowBox;
+}
+
+.highlight {
+  background-color: lighten($greenBox, 25%);
+}
+
+.wrong {
+  background-color: #FF8D5D;
+}
+
+.correct {
+  background-color: #29D1F7;
+}
